@@ -18,6 +18,17 @@ Ce projet est une simulation de comportements de steering utilisant la biblioth�
 - **H** : Appuyez sur `H` pour faire apparaître un pêcheur.
 - **Espace** : Appuyez sur la barre d'espace pour tirer sur les proies.
 
+Les boids simulent des comportements de groupe en utilisant trois règles principales :
+- **Alignement** : Les boids s'alignent avec la direction moyenne de leurs voisins proches.
+- **Cohésion** : Les boids se dirigent vers le centre de masse de leurs voisins proches.
+- **Séparation** : Les boids évitent de se rapprocher trop de leurs voisins.
+
+Des sliders sont utilisés pour ajuster les paramètres de ces comportements :
+- **Alignement** : Contrôle l'importance de l'alignement avec les voisins.
+- **Cohésion** : Contrôle l'importance de la cohésion avec les voisins.
+- **Séparation** : Contrôle l'importance de la séparation des voisins.
+
+
 ## Logique du Jeu
 
 ### Véhicules
