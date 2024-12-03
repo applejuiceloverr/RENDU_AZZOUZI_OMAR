@@ -15,6 +15,8 @@ class Player {
     const desired = createVector(mouseX - this.x, mouseY - this.y);
     desired.setMag(this.maxVel);
     const steering = desired.copy().sub(this.vel);
+
+
     //limite la force de steering
     if (steering.mag() > this.maxForce) {
       steering.setMag(this.maxForce);

@@ -19,7 +19,7 @@ class Bullet {
 
   draw(delta) {
     //dessine la bullet
-    stroke(0, 255, 255);
+    stroke("red");
     strokeWeight(2);
     // Dessine la balle comme une ligne de sa position actuelle à sa position future
     line(

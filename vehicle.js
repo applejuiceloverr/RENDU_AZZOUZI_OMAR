@@ -524,8 +524,9 @@ class Vehicle {
     rotate(this.vel.heading());
 
     // Increase the size of the images
-    let imgSize = this.r * 3;
+    let imgSize = this.r * 4;
     let wandererImgSize = this.r * 5;
+    let fisherImgsize = this.r * 6;
     // Affichage de l'image du véhicule
     if (this.isPrey) {
       image(preyImg, -imgSize / 2, -imgSize / 2, imgSize, imgSize);
@@ -538,7 +539,7 @@ class Vehicle {
         wandererImgSize
       );
     } else if (this.isFisher) {
-      image(fisherImg, -imgSize / 2, -imgSize / 2, imgSize, imgSize);
+      image(fisherImg, -fisherImgsize / 2, -fisherImgsize / 2, fisherImgsize, fisherImgsize);
     } else {
       image(vehicleImg, -imgSize / 2, -imgSize / 2, imgSize, imgSize);
     }

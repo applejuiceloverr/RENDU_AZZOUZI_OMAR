@@ -51,6 +51,11 @@ function setup() {
   alignSlider = createSlider(0, 2, 1.5, 0.1);
   cohesionSlider = createSlider(0, 2, 1, 0.1);
   separationSlider = createSlider(0, 2, 2, 0.1);
+
+  alignSlider.position(10, 10);
+  cohesionSlider.position(10, 40);
+  separationSlider.position(10, 70);
+
   for (let i = 0; i < 200; i++) {
     flock.push(new Boid());
   }
@@ -137,11 +142,11 @@ function draw() {
     boid.show();
   }
   //affichage des instructions
-  fill(0);
+  fill("red");
   textSize(16);
   textAlign(RIGHT, TOP);
   text(
-    "Instructions:\nW to spawn a wandering shark\nP to spawn a prey\nH to spawn a fisherman\nSpace to shoot the prey",
+    "Instructions:\nRightclick to spawn an Obstacle\nUse sliders to adjust boids values\nW to spawn a wandering shark\nP to spawn a prey\nH to spawn a fisherman\nSpace to shoot the prey",
     width - 10,
     10
   );
