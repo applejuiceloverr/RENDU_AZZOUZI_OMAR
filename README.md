@@ -4,8 +4,9 @@ Ce projet est une simulation de comportements de steering utilisant la biblioth�
 
 ## Vehicules:
 
+- **Sous-Marin** : suit la souris, et peut tirer sur une proie. 
 - **Orques** : suivent la souris , évitent les obstacles, boundaries et snake.
-- **Proies** : Les proies sont chassées par les requins wandering,.
+- **Proies** : Les proies wander sont chassées par les requins wandering.
 - **Pêcheurs** : Les pêcheurs wandering et boundaries.
 - **Requins wandering** : Les requins wander et chassent les proies, avec avoid obstacles et boundaries.
 
